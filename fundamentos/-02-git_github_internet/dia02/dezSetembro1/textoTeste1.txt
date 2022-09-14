@@ -1,0 +1,1 @@
+Esse arquivo de texto faz parte do exercicios que estou fazendo para fixação de conhecimento sobre o git.

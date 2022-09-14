@@ -1,0 +1,1 @@
+Criação do arquivo para verificação dentro do GitHub, pois os outros arquivos não aparecem para selecionar.

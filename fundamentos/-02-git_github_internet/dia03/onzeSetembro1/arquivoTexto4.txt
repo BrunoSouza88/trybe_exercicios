@@ -1,0 +1,2 @@
+Não estou apagando as branchs para que fique registrado cada passo que fiz nos exercicios!
+Adição desse texto diretamente da branch main. Afim de estudos.

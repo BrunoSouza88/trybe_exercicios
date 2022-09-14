@@ -1,0 +1,1 @@
+Arquivo de texto criado para verificar se é possivel fundir a branch1_1 diretamente na main
