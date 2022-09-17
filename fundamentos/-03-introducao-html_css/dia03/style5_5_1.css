@@ -1,0 +1,60 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: lowercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+    font-size: 40px;
+    background-color: gold;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bolder;
+}
+
+.colorBlue {
+    color: blue;
+}
+
+.pinkBg {
+    background-color: pink;
+}
+
+div ul li:hover {
+    font-weight: bolder;
+}
+
+.aliados1:hover {
+    color:  orange;
+}
+
+.aliados2:hover {
+    color:  green;
+}
+
+.aliados3:hover {
+    color:  black;
+}
+
+.aliados4:hover {
+    color:  yellow;
+}
+.aliados5:hover {
+    color:  green;
+}
