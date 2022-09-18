@@ -1,0 +1,25 @@
+.caixa {
+    color: white;   
+    display: inline-block; /* display: comando para mudar a forma como o box model ira ser representado. inline-block causa de exibir os elementos de bloco em linha */
+    line-height: 50px; 
+    text-align: center; /* text-align: alinha o texto, "center" faz com o que o elemento fique no centro. right a direita e left a esquerda */
+    vertical-align: top;
+}
+
+.width-and-height {
+    height: 50px;
+    width: 50px;
+}
+
+.padding {
+    padding: 20px; /* paddin eh o elemento fica logo imediatamento em torno do bloco */
+}
+
+.margin {
+    margin: 30px; /* margin eh a parte mais longe do bloco */
+}
+
+.border {
+    border: 10px solid black; /* para constituir uma borda no elemento, necessita-se designar que seja solido, a sua escolha de cor. */
+
+    
