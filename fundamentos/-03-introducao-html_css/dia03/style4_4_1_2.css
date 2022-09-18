@@ -1,0 +1,53 @@
+div:hover {
+    background-color: aqua;
+    border: 10px solid gold;
+}
+
+div:nth-of-type(1) {
+    color: red;
+}
+
+div:nth-of-type(2)  {
+    color: blue;
+}
+
+div:nth-of-type(3)   {
+    color: orange;
+
+}
+
+div:nth-of-type(4)  {
+    color: blueviolet;
+}
+
+div:nth-of-type(5)  {
+    color: darkviolet;
+}
+
+div:nth-of-type(1) > h3 {
+    background-color: darkcyan;
+}
+
+div:nth-of-type(2) > h3 {
+    background-color:blanchedalmond ;
+}
+
+div:nth-of-type(3) > h3 {
+    background-color:darkorange ;
+}
+
+div:nth-of-type(4) > h3 {
+    background-color:lime ;
+}
+
+div:nth-of-type(5) > h3 {
+    background-color: ivory ;
+}
+
+div:nth-of-type(3) {
+    font-size: xx-large;
+}
+
+div:nth-of-type(odd) {
+    font-style: italic;
+}
