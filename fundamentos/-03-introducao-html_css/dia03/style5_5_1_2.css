@@ -1,0 +1,70 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-of-type(odd) {
+    text-transform: lowercase;
+}
+
+h1, h3{
+    color: red;
+}
+
+h1 em, h3 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bolder;
+}
+
+ul li:nth-of-type(1) {
+    color: blue;
+}
+
+ul li:nth-of-type(2) {
+    color: blue;
+}
+
+ul li:nth-of-type(3) {
+    color: blue;
+}
+
+.pinkBG {
+    background-color: pink;
+}
+
+.aliado:hover {
+    font-weight: bolder;
+    background-color: fuchsia;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aliadoStack {
+    color: orange;
+}
+
+.aliadoW3 {
+    color: green;
+}
+
+.aliadoMDN {
+    color: black;
+}
+
+.aliadoDevDocs {
+    color: yellow;
+}
+
+.aliadoTrybe {
+    color: green;
+}
