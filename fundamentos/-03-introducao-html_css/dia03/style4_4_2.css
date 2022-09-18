@@ -1,0 +1,35 @@
+div:hover {
+    
+    border: 5px solid yellow;
+}
+
+div:nth-of-type(1) {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div:nth-of-type(2) {
+    color: green;
+    text-shadow: 1px;
+}
+
+div:nth-of-type(3) {
+    color: greenyellow;
+    font-size: xx-large;
+}
+
+div:nth-of-type(4) {
+    color: brown;
+    background-color: coral;
+}
+
+div:nth-of-type(5) {
+    color: aqua;
+    font-weight: bolder;
+}
+
+
+div:nth-of-type(odd) > h3  {
+    font-style: italic;
+    background-color: green;
+}
