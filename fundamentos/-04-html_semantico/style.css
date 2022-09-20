@@ -1,3 +1,26 @@
+
+
 .nomeCientifico {
     font-style: italic;
 }
+
+h1 {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px ;
+    margin: 20px;
+}
+
+.images {
+    width: 300px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    width: 30%;
+}
+
