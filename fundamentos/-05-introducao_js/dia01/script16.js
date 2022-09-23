@@ -2,11 +2,7 @@ const a = 2;
 const b = 13;
 const c = 2;
 
-const a2 = (a % 2 != 0);
-const b2 = (b % 2 != 0);
-const c2 = (c % 2 != 0);
-
-if(a2 || b2 || c2 ) {
+if(a != 0 || b2 != 0 || c2 != 0) {
   console.log ("True")
 } else {
   console.log ("False!")
