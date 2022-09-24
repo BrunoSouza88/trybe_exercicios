@@ -6,9 +6,9 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //let soma = 0;
 //for (let index = 0; index < numbers.length; index += 1) {
-  //  soma += numbers[index]
-    //console.log(soma)
+//  soma += numbers[index]
 //}
+//console.log(soma)
 
 //let medArit = 0;
 
@@ -50,22 +50,26 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //    }
 //}
 
-let valorMin = 100;
+// let valorMin = 100;
 
-for (let index = 0; index < numbers.length; index += 1) {
-        //valorMin.push(numbers[index])
-        if (numbers[index] < valorMin) {
-            valorMin = numbers[index];
-            console.log (valorMin)
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] < valorMin ) {
+//         valorMin = numbers[index]
+//     }
+// }
+// console.log (valorMin);
 
-        } else {}
-            
+// let soma = 0;
 
-    // if (numbers[index]) < valorMin) {
-        
-    //     valorMin = numbers[index];
-    // } else {}
+// for (index = 0; index <= 25; index = index +1){
+//     soma += index;
+// }
+// //console.log(soma);
 
 
+let divisao = 0;
+
+for (let index = 0; index < numbers.length; index+=1) {
+    
+    console.log(numbers[index]/2)
 }
-//console.log (valorMin);
