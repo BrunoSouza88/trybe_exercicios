@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+}
+
+ol:hover, ul:hover {
+    background-color:deepskyblue ;
+}
+
+li:hover {
+    color:green;
+}
+
+li {
+    list-style: none;
+}

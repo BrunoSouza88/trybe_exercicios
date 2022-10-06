@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/exercicio1.css">
+    <title>Exercício</title>
+  </head>
+  <body>
+    <script>
+
+      let elementH1 = document.createElement('h1');
+      elementH1.innerText = 'Exercício - JavaScript DOM';
+      document.body.appendChild(elementH1);
+
+      let elementMain = document.createElement('main');
+      elementMain.className = 'main-content';
+      document.body.appendChild(elementMain);
+
+      let elementSection1 = document.createElement('Section');
+      elementSection1.className = 'center-content';
+      elementMain.appendChild(elementSection1);
+
+      let elementP1 = document.createElement('p');
+      elementSection1.appendChild(elementP1);
+      elementP1.innerHTML = "Testando TESTANDO testando"
+
+      let elementSection2 = document.createElement("Section");
+      elementSection2.className = "left-content";
+      elementMain.appendChild(elementSection2);
+
+      let elementSection3 = document.createElement("Section");
+      elementSection3.className = "right-content";
+      document.querySelector('.main-content') .appendChild(elementSection3);
+
+      let img1 = document.createElement("imd");
+      img1.className = "small-image";
+      img1.src = "https://picsum.photos/200";
+      elementSection2.appendChild(img1);
+
+      let ul1 = document.createElement('ul');
+      elementSection3.appendChild(ul1);
+      let numeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let index = 0; index < numeros.length; index += 1) {
+        let li1 = document.createElement('li');
+        li1.innerHTML = numeros[index];
+        ul1.appendChild(li1)
+      }
+      for (index = 0; index <=3 ; index += 1) {
+        let h31 = document.createElement('h3');
+        elementMain.appendChild(h31);
+        h31.innerHTML = 'Texto'
+      }
+
+
+    </script>
+  </body>
+</html>
