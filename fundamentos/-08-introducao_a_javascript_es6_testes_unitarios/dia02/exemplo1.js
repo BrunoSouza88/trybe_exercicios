@@ -61,21 +61,41 @@
 
 //#--------------------------------------------------------
 
-const verifyNumber = (valorA, valorB) => {
+// const verifyNumber = (valorA, valorB) => {
+//     if (typeof valorA !== 'number' || typeof valorB !== 'number'){
+//         throw new Error ('Valor(es) não numérico(s)')
+//     }
+// }
+
+// const soma = (valorA, valorB) => {
+//     try {
+//         verifyNumber(valorA, valorB)
+//             return valorA + valorB;
+//         }
+//         catch (erro) {
+//             return erro.message;
+//         }
+//     }
+
+
+// console.log(soma(2,"4"));
+
+//#--------------------------------------------------------
+
+const verifNum = (valorA, valorB) => {
     if (typeof valorA !== 'number' || typeof valorB !== 'number'){
-        throw new Error ('Valor(es) não numérico(s)')
+        throw new Error ('Valor(es) não numérico(s)!')
     }
 }
 
 const soma = (valorA, valorB) => {
     try {
-        verifyNumber(valorA, valorB)
-            return valorA + valorB;
-        }
-        catch (erro) {
-            return erro.message;
-        }
+        verifNum(valorA, valorB);
+        return valorA + valorB;
     }
+    catch (erro) {
+        return erro.message;
+    }
+}
 
-
-console.log(soma(2,"4"));
+console.log(soma(3,"4"));
