@@ -8,8 +8,7 @@ const longestWord = (text) => {
             maxLength = word.length;
             result = word;
         }
-        
     }
     return result;
 }
-console.log(longestWord('Antonio foi ao banheiro e não sabemos o que aconteceu'));
+console.log(longestWord('o rato roeu a roupa do rei de roma'));
