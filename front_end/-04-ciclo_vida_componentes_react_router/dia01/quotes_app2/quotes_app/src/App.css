@@ -1,38 +1,63 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-flow: column;
+  font-size: 18px;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  background-color: #1DB702;
+  border: none;
+  border-radius: 5px;
   color: white;
+  font-size: 14px;
+  padding: 5px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-quote {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 30vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-quote>button {
+  background-color: #3E4854;
+  margin: 10px;
 }
+
+.main-quote .quote {
+  font-size: 32px;
+}
+
+.quote {
+  color: #3E4854;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.author {
+  color: #0376E2;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.favorite-quotes {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: center;
+}
+
+.favorite-quotes .card {
+  margin: 10px;
+  padding: 15px 25px;
+  max-width: 300px;
+}
+
+.favorite-quotes button {
+  background-color: #E22859;
+};
