@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"></script>
+  <title>Contador Redux 3</title>
+</head>
+
+<body>
+  <main>
+    <h1>Contador</h1>
+
+    <h3>O valor da soma</h3>
+    <h4>0 valor da multiplação</h4>
+    <button id="incrementar">INCREMENTAR</button>
+    <button id="decrementar">DECREMENTAR</button>
+  </main>
+
+  <script>
+
+    const INITIAL_STATE = {
+      count: 0,
+      multiplicador: 1,
+    };
+
+    const reducer = (state = INITIAL_STATE, action) => {
+      switch (action.type) {
+        case "INCREMENTAR":
+          return {
+            count: state.count + 1,
+            multiplicador: state.multiplicador * 2,
+          };
+        case "DECREMENTAR":
+          return {
+            count: state.count -1,
+            multiplicador: (state.multiplicador * 2),
+          }
+        default:
+          return state;
+      }
+    }
+
+    const store = Redux.createStore(reducer);
+
+    const btnSoma = document.getElementById("incrementar");
+    const btnSub = document.getElementById("decrementar");
+
+    btnSoma.addEventListener("click", () => {
+      store.dispatch({
+        type: "INCREMENTAR",
+      });
+    });
+
+    btnSub.addEventListener("click", () => {
+      store.dispatch({
+        type: "DECREMENTAR",
+      });
+    });
+
+    store.subscribe(() => {
+      document.querySelector("h3").innerText = store.getState().count;
+      document.querySelector("h4").innerHTML = store.getState().multiplicador;
+    })
+
+    
+  </script>
+</body>
+
+</html>

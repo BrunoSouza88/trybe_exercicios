@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"></script>
+  <title>Contador com Redux</title>
+</head>
+
+<body>
+  <main>
+    <h1>Contador</h1>
+
+    <h3 id="contador">0</h3>
+    <button id="incrementa">Incrementar</button>
+    <button id="decrementa">Decrementar</button>
+  </main>
+
+  <script>
+
+    const INITIAL_STATE = {
+      count: 0,
+    }
+
+    const reducer = (state = INITIAL_STATE, action) => {
+      switch (action.type) {
+        case "INCREMENTAR":
+          return {
+            count: state.count + 1
+          }
+        case "DECREMENTAR":
+          return {
+            count: state.count - 1
+          }
+      }
+      return state;
+    }
+
+    const store = Redux.createStore(reducer);
+
+    const incrementaBtn = document.getElementById("incrementa");
+    const decrementaBtn = document.getElementById("decrementa");
+
+    incrementaBtn.addEventListener("click", () => {
+      store.dispatch({
+        type: "INCREMENTAR",
+      })
+    })
+
+    decrementaBtn.addEventListener("click", () => {
+      store.dispatch({
+        type: "DECREMENTAR",
+      })
+    })
+
+    store.subscribe(() => {
+      const elementH3 = document.getElementById("contador");
+      counter = store.getState().count;
+      elementH3.innerHTML = counter;
+      console.log(store.getState());
+    })
+
+  </script>
+</body>
+
+</html>
