@@ -81,6 +81,7 @@ app.put('/movies/:id', async (req, res) => {
 app.delete('/movies/:id', async (req, res) => {
   // DELETE para apagar um item, através de seu ID
   const { id } = req.params; // Desestruturação basica, buscando o ID do REQuisição do usuário
+  console.log(id);
   try {
     const movies = await funcReadFile(); // Leitura padrão do arquivo
     const newArray = movies.filter((element) => Number(element.id) !== Number(id)); // Salva numa nova variavel todos os itens que tem o ID diferente do que pesquisamos. Assim temos todos os itens que não queremos apagar
