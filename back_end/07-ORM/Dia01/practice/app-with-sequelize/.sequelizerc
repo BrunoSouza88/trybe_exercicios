@@ -1,0 +1,8 @@
+const path = require('path'); // Importa o path do NodeJS para trabalhar melhor com os caminhos dos arquivos
+
+module.exports = {
+  'config': path.resolve('src', 'config', 'config.js'), // Caminho para o arquivo config. Note que essa pasta já é criada com um arquivo json dentro
+  'models-path': path.resolve('src', 'models'), // Caminho para pasta models dentro do src, por isso o caminho esta como 'src' e 'models'. Note que a pasta contem um arquivo index.js que irá ser reconhecida desta forma
+  'seeders-path': path.resolve('src', 'seeders'), // Caminho para seeders. Mesmo molde do de cima
+  'migration-path': path.resolve('src', 'migrations'), // Funciona da mesma forma como os dois anteriores. 
+}
